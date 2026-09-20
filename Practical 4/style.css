@@ -1,0 +1,453 @@
+/* ==========================
+   StudentHub Portal - style.css
+   Practical 4 Compatible
+========================== */
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Smooth Scroll */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Selection */
+
+::selection{
+    background:#1e3a8a;
+    color:white;
+}
+
+/* Body */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+/* Menu Buttons */
+
+#menuBtn,
+#themeBtn{
+
+    margin:8px;
+    padding:10px 16px;
+    background:#315bb5;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#menuBtn:hover,
+#themeBtn:hover{
+    background:#4d7df0;
+}
+
+/* Navigation */
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:10px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    background:#315bb5;
+    padding:10px 16px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:#4d7df0;
+}
+
+/* Mobile Menu */
+
+@media(max-width:768px){
+
+    .navbar{
+        display:none;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .navbar.showMenu{
+        display:flex;
+    }
+
+}
+
+/* Line */
+
+hr{
+    border:none;
+    height:1px;
+    background:#d6d6d6;
+    margin:15px 0;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* Headings */
+
+main h2{
+    text-align:center;
+    color:#1e3a8a;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    box-shadow:0 5px 15px rgba(0,0,0,0.20);
+}
+
+.card h3{
+    color:#1e3a8a;
+    border-bottom:2px solid #e5e7eb;
+    padding-bottom:8px;
+    margin-bottom:18px;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+/* Forms */
+
+.login-form{
+    width:400px;
+    max-width:95%;
+    margin:40px auto;
+}
+
+label{
+    font-weight:bold;
+    color:#1e3a8a;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+textarea{
+
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#1e3a8a;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input[type="checkbox"]{
+    margin-right:6px;
+}
+
+.login-form a{
+    float:right;
+    font-size:14px;
+}
+
+.login-form button{
+    width:100%;
+}
+
+/* Buttons */
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#315bb5;
+}
+
+/* Links */
+
+a{
+    color:#1e3a8a;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Lists */
+
+ul{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+li a{
+    font-weight:bold;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:15px 0;
+    background:white;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+    padding:12px;
+    text-align:center;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #ccc;
+}
+
+table,
+th{
+    border:1px solid #ccc;
+}
+
+tr:nth-child(even){
+    background:#f4f7fc;
+}
+
+tr:hover{
+    background:#dbeafe;
+}
+
+/* Footer */
+
+.footer{
+    width:100%;
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Notification Banner */
+
+#notificationBanner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-left:5px solid #1e3a8a;
+}
+
+/* Modal */
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,0.5);
+    z-index:1000;
+}
+
+.modal-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    width:320px;
+    text-align:center;
+}
+
+/* FAQ */
+
+.faqBtn{
+    width:100%;
+    text-align:left;
+    background:#315bb5;
+    margin-bottom:5px;
+}
+
+.faqAnswer{
+    display:none;
+    padding:10px;
+    background:#eef4ff;
+    border-radius:5px;
+}
+
+/* Placeholder */
+
+::placeholder{
+    color:gray;
+}
+
+/* ==========================
+   IMPROVED DARK MODE
+========================== */
+
+.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+.dark-mode header{
+    background:#0f172a;
+}
+
+.dark-mode .footer{
+    background:#0f172a;
+}
+
+.dark-mode .card{
+    background:#1e293b;
+    color:#f5f5f5;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode label,
+.dark-mode strong{
+    color:#60a5fa;
+}
+
+.dark-mode a{
+    color:#93c5fd;
+}
+
+.dark-mode a:hover{
+    color:white;
+}
+
+.dark-mode table{
+    background:#1e293b;
+}
+
+.dark-mode th{
+    background:#2563eb;
+    color:white;
+}
+
+.dark-mode td{
+    background:#334155;
+    color:white;
+    border-color:#475569;
+}
+
+.dark-mode tr:nth-child(even){
+    background:#2b3a4d;
+}
+
+.dark-mode tr:hover{
+    background:#475569;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="password"],
+.dark-mode input[type="date"],
+.dark-mode textarea{
+
+    background:#334155;
+    color:white;
+    border:1px solid #64748b;
+}
+
+.dark-mode ::placeholder{
+    color:#cbd5e1;
+}
+
+.dark-mode button{
+    background:#2563eb;
+}
+
+.dark-mode button:hover{
+    background:#3b82f6;
+}
+
+.dark-mode .modal-box{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode #notificationBanner{
+    background:#1e293b;
+    border-left:5px solid #60a5fa;
+}
+
+.dark-mode .faqAnswer{
+    background:#334155;
+    color:white;
+}
+
+/* Hide Navbar when Menu button is clicked */
+.hiddenMenu{
+    display: none !important;
+}
