@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StudentHub Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to StudentHub Portal</h1>
+
+        <button id="themeBtn">Theme</button>
+    </header>
+
+    <hr>
+
+    <!-- Login Form -->
+    <main class="container">
+
+        <section class="card">
+
+            <h2><i>Sign in and see what's waiting for you !</i></h2>
+
+            <form class="login-form" action="dashboard.html">
+
+                <p>
+                    <label>Email :</label>
+                    <input type="email" name="username" id="username" placeholder="Enter your registered email">
+                </p>
+
+                <br>
+
+                <p>
+                    <label>Password :</label>
+                    <input type="password" name="password" id="password">
+                </p>
+
+                <br>
+
+                <p class="login-options">
+                    <a href="#">Forgot Password?</a>
+                </p>
+
+                <p class="register-link">
+                    <a href="register.html">Create New Account</a>
+                </p>
+
+                <button type="button" id="loginBtn" onclick="loginSuccess()">Login</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

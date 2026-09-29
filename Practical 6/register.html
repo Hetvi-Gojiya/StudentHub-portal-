@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>StudentHub Portal - Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>StudentHub Portal</h1>
+
+        <button id="themeBtn">🌙 Dark</button>
+
+    </header>
+
+    <hr>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Student Registration</h2>
+
+            <form id="registerForm">
+
+                <p>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">
+                    <small id="nameError"></small>
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <small id="emailError"></small>
+                </p>
+
+                <p>
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile">
+                    <small id="mobileError"></small>
+                </p>
+
+                <p>
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword">
+                    <small id="strengthText"></small>
+                    <small id="passwordError"></small>
+                </p>
+
+                <p>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword">
+                    <small id="confirmError"></small>
+                </p>
+
+                <p>
+                <p>
+                    <label for="course">Course</label>
+                    <select id="course">
+
+                        <option value="">Select Course</option>
+                        <option>B.Tech CE</option>
+                        <option>B.Tech IT</option>
+                        <option>B.Tech CSE</option>
+
+                    </select>
+
+                    <small id="courseError"></small>
+
+                </p>
+
+                <p>
+
+                    <label for="year">Year</label>
+
+                    <select id="year">
+
+                        <option value="">Select Year</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+
+                    </select>
+
+                    <small id="yearError"></small>
+
+                </p>
+
+                <p>
+
+                    <label>Gender</label>
+
+                    <br>
+
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+
+                    <br>
+
+                    <small id="genderError"></small>
+
+                </p>
+
+                <p>
+
+                    <input type="checkbox" id="terms">
+
+                    <label for="terms">I accept Terms and Conditions</label>
+
+                    <br>
+
+                    <small id="termsError"></small>
+
+                </p>
+
+                <p>
+                    <label for="captchaInput">Enter CAPTCHA</label>
+                    <br>
+                    <canvas id="captchaCanvas" width="120" height="40" style="background-color: #f0f0f0; border: 1px solid #ccc; margin-bottom: 5px;"></canvas>
+                    <br>
+                    <input type="text" id="captchaInput" placeholder="Type letters shown above">
+                    <small id="captchaError"></small>
+                </p>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+            <p style="text-align:center;margin-top:15px;">
+
+                Already have an account?
+
+                <a href="login.html">Login</a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
