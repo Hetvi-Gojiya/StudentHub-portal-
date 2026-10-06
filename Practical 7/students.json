@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Sharma", "course": "B.Tech CE", "year": 2, "gpa": 8.5 },
+  { "id": 2, "name": "Diya Patel", "course": "B.Tech IT", "year": 3, "gpa": 9.1 },
+  { "id": 3, "name": "Rohan Gupta", "course": "B.Tech CSE", "year": 1, "gpa": 7.8 },
+  { "id": 4, "name": "Sneha Iyer", "course": "B.Tech CE", "year": 4, "gpa": 8.9 },
+  { "id": 5, "name": "Kabir Singh", "course": "B.Tech IT", "year": 2, "gpa": 7.5 },
+  { "id": 6, "name": "Ananya Desai", "course": "B.Tech CSE", "year": 3, "gpa": 9.4 },
+  { "id": 7, "name": "Vivaan Joshi", "course": "B.Tech CE", "year": 1, "gpa": 8.1 },
+  { "id": 8, "name": "Meera Reddy", "course": "B.Tech IT", "year": 4, "gpa": 8.7 },
+  { "id": 9, "name": "Aditya Verma", "course": "B.Tech CSE", "year": 2, "gpa": 7.2 },
+  { "id": 10, "name": "Kavya Nair", "course": "B.Tech CE", "year": 3, "gpa": 9.0 },
+  { "id": 11, "name": "Ishaan Mehta", "course": "B.Tech IT", "year": 1, "gpa": 8.3 },
+  { "id": 12, "name": "Riya Kapoor", "course": "B.Tech CSE", "year": 4, "gpa": 8.8 },
+  { "id": 13, "name": "Arjun Das", "course": "B.Tech CE", "year": 2, "gpa": 7.9 },
+  { "id": 14, "name": "Zara Ali", "course": "B.Tech IT", "year": 3, "gpa": 9.2 },
+  { "id": 15, "name": "Dev Kumar", "course": "B.Tech CSE", "year": 1, "gpa": 8.0 }
+]

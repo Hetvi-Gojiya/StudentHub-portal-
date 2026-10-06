@@ -1,0 +1,24 @@
+[
+    {
+        "id": "6ac4c5e7d245b",
+        "name": "Hetvi",
+        "email": "hetvi90233@gmail.com",
+        "mobile": "9023301088",
+        "course": "B.Tech CE",
+        "year": "2",
+        "gender": "Female",
+        "password": "Hetvi@123",
+        "registration_date": "2026-10-06 11:56:55"
+    },
+    {
+        "id": "6ac4c7ec39f0a",
+        "name": "Hetvi",
+        "email": "hetvi90233@gmail.com",
+        "mobile": "9023301088",
+        "course": "B.Tech CE",
+        "year": "2",
+        "gender": "Female",
+        "password": "hETVI@123",
+        "registration_date": "2026-10-06 12:05:32"
+    }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>StudentHub Portal - Data Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .controls { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .data-grid { display: grid; gap: 15px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+        .card-item { background: var(--bg-color, #fff); border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+        .pagination { display: flex; justify-content: center; gap: 15px; margin-top: 20px; align-items: center; }
+        .dependent-dropdowns { margin-top: 30px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StudentHub Data Explorer</h1>
+        <button id="themeBtn">🌙 Dark</button>
+    </header>
+    <hr>
+    <main class="container">
+        
+        <!-- Controls -->
+        <section class="controls">
+            <select id="dataSource">
+                <option value="events.json">Events</option>
+                <option value="students.json">Students</option>
+                <option value="faqs.json">FAQs</option>
+            </select>
+            
+            <input type="text" id="searchInput" placeholder="Search...">
+            
+            <select id="sortSelect">
+                <option value="">Sort By</option>
+                <option value="asc">A-Z (Ascending)</option>
+                <option value="desc">Z-A (Descending)</option>
+            </select>
+        </section>
+
+        <!-- Loading / Error states -->
+        <div id="statusMessage" style="text-align: center; margin-bottom: 10px;"></div>
+
+        <!-- Render Container -->
+        <section class="data-grid" id="dataContainer">
+            <!-- Data rendered here dynamically -->
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageIndicator">Page 1</span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+        <!-- Intermediate Extension -->
+        <section class="dependent-dropdowns">
+            <h2>Location Selector (Intermediate Extension)</h2>
+            <p>Select a country to load states, and a state to load cities.</p>
+            <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                <select id="countrySelect">
+                    <option value="">Select Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                </select>
+                <select id="stateSelect" disabled>
+                    <option value="">Select State</option>
+                </select>
+                <select id="citySelect" disabled>
+                    <option value="">Select City</option>
+                </select>
+            </div>
+        </section>
+
+    </main>
+    <script src="data-viewer.js"></script>
+</body>
+</html>
