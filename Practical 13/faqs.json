@@ -1,0 +1,17 @@
+[
+  { "id": 1, "question": "How to register for courses?", "answer": "Go to the academic section and click 'Register Courses'.", "category": "Academics" },
+  { "id": 2, "question": "When is the fee deadline?", "answer": "The fee deadline is usually 2 weeks after the semester starts. Check FeeDesk.", "category": "Finance" },
+  { "id": 3, "question": "How to apply for leave?", "answer": "Use the LeaveTrack module on the dashboard.", "category": "Admin" },
+  { "id": 4, "question": "Where can I find the syllabus?", "answer": "Syllabus is available in the StudySpace portal.", "category": "Academics" },
+  { "id": 5, "question": "Are there scholarships available?", "answer": "Yes, check the Finance tab for scholarship forms.", "category": "Finance" },
+  { "id": 6, "question": "How to change my password?", "answer": "Go to MyProfile and click 'Change Password'.", "category": "Admin" },
+  { "id": 7, "question": "What is the passing criteria?", "answer": "You need at least 40% in each subject to pass.", "category": "Academics" },
+  { "id": 8, "question": "Can I pay fees in installments?", "answer": "Yes, installment options are available in FeeDesk.", "category": "Finance" },
+  { "id": 9, "question": "How to join a club?", "answer": "Club registrations open during the first month of the semester.", "category": "Admin" },
+  { "id": 10, "question": "Who is my faculty advisor?", "answer": "Check your MyProfile page to see your assigned advisor.", "category": "Academics" },
+  { "id": 11, "question": "How to get a fee receipt?", "answer": "Download it from the transaction history in FeeDesk.", "category": "Finance" },
+  { "id": 12, "question": "Where is the library?", "answer": "The central library is in Block B, ground floor.", "category": "Admin" },
+  { "id": 13, "question": "How to check my attendance?", "answer": "Go to the BunkMeter section to view your attendance.", "category": "Academics" },
+  { "id": 14, "question": "What are the hostel charges?", "answer": "Hostel charges are detailed in the Finance section under 'Accommodations'.", "category": "Finance" },
+  { "id": 15, "question": "How to report a technical issue?", "answer": "Email IT support at support@studenthub.edu.", "category": "Admin" }
+]
