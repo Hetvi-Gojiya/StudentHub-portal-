@@ -1,199 +1,69 @@
-# StudentHub Portal
+# 📚 StudentHub — Full-Stack Campus Management Portal
 
-## Project Title
-
-**StudentHub Portal**
-
-## Project Description
-
-StudentHub Portal is a simple web-based student management portal designed for college students. It provides different modules in a single platform where students can easily access their academic information such as schedules, attendance, study materials, tasks, fee details, leave status, and personal profile.
-
-This project is developed using **HTML and CSS** and is based on a wireframe and sitemap. The main objective of the project is to provide an easy-to-use, visually appealing, and responsive interface that helps students manage their daily academic activities.
+> A comprehensive full-stack web application for student and campus event management, built with PHP, MySQL, HTML5/CSS3/JavaScript, and deployed on XAMPP.
 
 ---
 
-## Objectives
+## 🚀 Features
 
-* Provide a centralized student portal.
-* Make academic information easily accessible.
-* Help students track attendance and academic progress.
-* Organize daily tasks and schedules.
-* Provide study materials in one place.
-* Simplify fee and leave management.
-* Create a clean and user-friendly interface using CSS.
-
----
-
-## Modules
-
-* Login
-* Dashboard
-* My Schedule
-* Bunk Meter
-* Study Space
-* Campus Buddy
-* Task Planner
-* My Progress
-* Leave Track
-* Fee Desk
-* My Profile
+| Module | Description |
+| :--- | :--- |
+| **User Authentication** | Secure registration & login with bcrypt password hashing (`password_hash` / `password_verify`). |
+| **Session Management** | Auto session timeout (10 minutes of inactivity), `session_regenerate_id()` against fixation, remember-me token support. |
+| **Role-Based Access Control (RBAC)** | Strict access separation between Admin and Student roles with automatic redirection. |
+| **Admin Dashboard** | Dynamic statistics cards, live user counters, student status toggling (Active/Inactive), and Chart.js analytics. |
+| **Student Record Management** | Full CRUD capabilities, search, filtering by department/status, soft deletion, and CSV export. |
+| **Event Management** | Event creation and editing with secure poster file uploads (MIME validation, 2MB limit, unique file naming). |
+| **Live RESTful JSON API** | Full REST API (`GET`, `POST`, `PUT`, `DELETE`) with standard HTTP status codes (`200`, `201`, `400`, `404`). |
+| **AJAX Operations** | Asynchronous Fetch API CRUD operations without page refreshes, debounced search, and toast alerts. |
+| **System Audit Logging** | Dedicated audit trail recording admin logins, logouts, status modifications with IP tracking and timestamps. |
+| **Security Hardening** | 100% PDO prepared statements, XSS output sanitization (`htmlspecialchars`), and upload directory execution blocking (`.htaccess`). |
 
 ---
 
-## Functional Requirements
+## 🛠 Technology Stack
 
-### Login Module
-
-* User can enter username.
-* User can enter password.
-* User can select **Remember Me**.
-* User can access **Forgot Password**.
-* User can login to the dashboard.
-
-### Dashboard
-
-* Display next class information.
-* Display attendance summary.
-* Display today's tasks.
-* Display upcoming events.
-* Display campus announcements.
-
-### My Schedule
-
-* View weekly schedule.
-* View today's schedule.
-* View upcoming classes.
-
-### Bunk Meter
-
-* Display current attendance.
-* Display subject-wise attendance.
-* Show attendance tips.
-
-### Study Space
-
-* Search study materials.
-* View subject-wise resources.
-* Access notes and assignments.
-
-### Campus Buddy
-
-* Ask questions to AI Assistant.
-* View Frequently Asked Questions.
-* View important contact numbers.
-
-### Task Planner
-
-* View today's tasks.
-* View upcoming tasks.
-* View completed tasks.
-
-### My Progress
-
-* View semester results.
-* View subject-wise performance.
-* View performance insights.
-
-### Leave Track
-
-* View leave status.
-* Apply for leave.
-* Read leave guidelines.
-
-### Fee Desk
-
-* View fee overview.
-* View payment history.
-* Download payment receipt.
-* Read important fee notices.
-
-### My Profile
-
-* View personal information.
-* View academic information.
-* View scholarship details.
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript (ES6+), Google Fonts (Inter) |
+| **Data Visualization** | Chart.js 4.x |
+| **Backend** | PHP 8.2+ (Object-Oriented & Procedural PDO) |
+| **Database** | MySQL / MariaDB via XAMPP |
+| **Web Server** | Apache 2.4 (XAMPP Environment) |
+| **Version Control** | Git & GitHub |
 
 ---
 
-## Non-Functional Requirements
+## 📁 Project Structure
 
-### Performance
-
-* Pages should load quickly.
-* Navigation should be smooth.
-
-### Usability
-
-* User interface should be simple and visually appealing.
-* Easy for students to understand.
-* Beginner-friendly design.
-
-### Reliability
-
-* Information should be displayed correctly.
-* Navigation links should work properly.
-
-### Maintainability
-
-* HTML and CSS code should be simple.
-* Code should be easy to update.
-* Proper indentation and organization should be maintained.
-
-### Scalability
-
-* New modules can be added in the future.
-* Existing modules can be modified easily.
-
-### Security
-
-* Login page should allow authenticated users.
-* Student information should remain secure.
-* Password should not be displayed in plain text.
-
-### Compatibility
-
-* Should work on major web browsers.
-* Should support desktop and laptop devices.
-
----
-
-## Software Requirements
-
-* Web Browser (Google Chrome, Microsoft Edge, Firefox)
-* Text Editor (Visual Studio Code)
-* Operating System (Windows 10/11)
-
----
-
-## Hardware Requirements
-
-* Processor: Intel Core i3 or above
-* RAM: Minimum 4 GB
-* Storage: Minimum 500 MB Free Space
-* Keyboard and Mouse
-
----
-
-## Future Enhancements
-
-* Add JavaScript for interactivity.
-* Connect with a database.
-* Implement student authentication.
-* Add faculty and admin modules.
-* Add notification system.
-* Add dark mode.
-* Improve mobile responsiveness.
-* Integrate backend technologies such as PHP, Node.js, or Java.
-
----
-
-## Technologies Used
-
-* HTML5
-* CSS3
-
----
-
-## Conclusion
-
-StudentHub Portal is a simple student management portal developed using **HTML and CSS**. It enables students to access their academic information through a clean, organized, and user-friendly interface. The project demonstrates the fundamentals of front-end web development and can be further enhanced by integrating JavaScript, backend technologies, databases, authentication, and additional features in future versions.
+```text
+StudentHub/
+├── studenthub.sql                # Base database schema & initial seed data
+├── studenthub_db_dump.sql        # Full database export with latest tables & logs
+├── README.md                     # Comprehensive project documentation
+├── test_report.php               # Automated integration test runner (43 tests)
+│
+└── htmlfiles/                    # Core application files
+    ├── db.php                    # Centralized PDO database connection
+    ├── style.css                 # Global modern UI stylesheet
+    ├── script.js                 # Shared JavaScript utilities
+    │
+    ├── register.php              # User registration interface
+    ├── process_register.php      # Registration processor with duplicate checks & bcrypt
+    ├── login.php                 # Secure login interface
+    ├── process_login.php         # Authentication handler with session & RBAC control
+    ├── logout.php                # Session destruction and audit logging
+    │
+    ├── dashboard.php             # Protected student user dashboard
+    ├── admin_dashboard.php       # Protected admin dashboard with analytics & audit trail
+    ├── view_records.php          # Student CRUD management portal
+    ├── manage_events.php         # Event management with secure file uploads
+    │
+    ├── api_events.php            # RESTful JSON API endpoint (GET/POST/PUT/DELETE)
+    ├── events_live.php           # AJAX/Fetch-driven real-time event interface
+    │
+    ├── test_db.php               # Database connection verification script
+    ├── test_timeout.php          # Session timeout testing utility
+    │
+    └── uploads/                  # Uploaded event posters
+        └── .htaccess             # Security rule preventing direct PHP execution
