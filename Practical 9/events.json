@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Tech Hackathon 2026", "date": "2026-10-15", "category": "Technical", "status": "Upcoming" },
+  { "id": 2, "title": "Annual Sports Meet", "date": "2026-11-05", "category": "Sports", "status": "Upcoming" },
+  { "id": 3, "title": "Cultural Fest", "date": "2026-12-20", "category": "Cultural", "status": "Upcoming" },
+  { "id": 4, "title": "Alumni Meet", "date": "2026-09-10", "category": "Networking", "status": "Completed" },
+  { "id": 5, "title": "AI Workshop", "date": "2026-10-05", "category": "Technical", "status": "Upcoming" },
+  { "id": 6, "title": "Basketball Tournament", "date": "2026-11-12", "category": "Sports", "status": "Upcoming" },
+  { "id": 7, "title": "Music Concert", "date": "2026-12-22", "category": "Cultural", "status": "Upcoming" },
+  { "id": 8, "title": "Job Fair 2026", "date": "2026-10-25", "category": "Networking", "status": "Upcoming" },
+  { "id": 9, "title": "Coding Bootcamp", "date": "2026-08-15", "category": "Technical", "status": "Completed" },
+  { "id": 10, "title": "Cricket League", "date": "2026-11-18", "category": "Sports", "status": "Upcoming" },
+  { "id": 11, "title": "Drama Competition", "date": "2026-12-23", "category": "Cultural", "status": "Upcoming" },
+  { "id": 12, "title": "Startup Pitch", "date": "2026-10-30", "category": "Networking", "status": "Upcoming" },
+  { "id": 13, "title": "Web Dev Seminar", "date": "2026-09-01", "category": "Technical", "status": "Completed" },
+  { "id": 14, "title": "Football Match", "date": "2026-11-25", "category": "Sports", "status": "Upcoming" },
+  { "id": 15, "title": "Art Exhibition", "date": "2026-12-25", "category": "Cultural", "status": "Upcoming" }
+]
